@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .bs-sec {
+    padding: 50px 0;
+}
+.bs-sec.no-btm-pad {
+    padding-bottom: 0;
+}
+
+
+.bs-sec .sec-head {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.bs-sec .sec-title {
+    font-size: 26px;
+    line-height: 30px;
+    color: #002447;
+    font-family: Lato-Bold;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.bs-sec .sec-title:after {
+    content: "";
+    position: absolute;
+    width: 6rem;
+    height: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    background: #d2b160;
+}
+
+.bs-table table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+
+.bs-table table tr {
+    border-bottom: 0.1rem solid #4dbee0;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.bs-table table td{color: #fff;}
+.bs-table table td, .bs-table table th{
+        padding: 0.25rem;
+}
+.bs-table table td, .bs-table table th {
+    white-space: pre-wrap;
+    line-height: 1.7rem;
+    font-family: Myriad-Pro-Bold;
+    color: #fff;
+}
+
+.bs-table th:first-child{
+    width: 340px;
+}
+.bs-table .reg{
+    width: 100px;
+}
+.bs-table table tr.main-heading {
+    background: #102446;
+    border-bottom: 0.1rem solid #102446;
+}
+
+.bs-table table tr.main-heading th {
+    padding: 2.3rem 1rem;
+}
+
+.bs-table table tr.main-heading th {
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+        color: #fff;
+}
+.bs-table table td.left-align, .bs-table table th.left-align {
+    text-align: left;
+}
+
+.bs-table table tr.inner-title2 {
+    background: #177ebb;
+    border-bottom: 0;
+}
+
+.bs-table table tr.colorbrick {
+    background: #d2b25f;
+    border-bottom: 0.1rem solid #fff;
+}
+
+.bs-table table tr.colorbrick td {
+    color: #231f20;
+    font-family: Myriad-Pro-Regular;
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+.note.typ3 {
+    font-size: 1.5rem;
+    color: #231f20;
+    font-style: normal;
+    line-height: 2.4rem;
+    font-family: Myriad-Pro-Regular;
+}
+
+.buttons_area {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 3.5rem 0;
+    border-top: 0.1rem solid #7a7a7a;
+    border-bottom: 0.1rem solid #7a7a7a;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.buttons_area .btn-yellow {
+    display: inline-block;
+    background: #d2b25f;
+    position: relative;
+    color: #002447;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    line-height: 5.9rem;
+    font-family: Myriad-Pro-Bold;
+    height: 5.3rem;
+    width: 24.4rem;
+    text-align: center;
+    padding: 0 5.3rem 0 0;
+    transition: all 0.4s ease;
+}
+
+.buttons_area .btn-yellow .icon {
+    width: 5.3rem;
+    height: 5.3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.buttons_area .btn-yellow:first-of-type {
+    margin-right: 4.5rem;
+}
+
+
+@media only screen and (max-width: 992px){
+.bs-sec .sec-title {
+    font-size: 1.8rem;
+    font-family: Lato-Bold;
+}
+.bs-table .table-Warp {
+    overflow-x: auto;
+}
+
+table.tbl {
+    width: 110.9rem;
+}
+
+.bs-table table {
+    margin-bottom: 1rem;
+}
+.bs-table table th {
+    font-size: 1.4rem;
+}
+.bs-table table td {
+    font-size: 1.3rem;
+}
+.bs-table table tr.colorbrick td {
+    font-size: 1.3rem;
+    line-height: 1rem;
+}
+}
+
+
+@media only screen and (max-width: 767px){
+.bs-sec .sec-title:after {
+    width: 3rem;
+    height: 4px;
+}
+.bs-sec {
+    padding: 25px 0;
+}
+table.tbl.fst {
+    width: 68.9rem;
+}
+.buttons_area {
+    padding: 2rem 0;
+}
+.buttons_area .btn-yellow {
+    font-size: 1.4rem;
+    line-height: 4.8rem;
+    height: 4.8rem;
+    display: block;
+    width: 27rem;
+    text-align: center;
+    line-height: 4.8rem;
+}
+.buttons_area .btn-yellow:first-of-type {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+}
+.buttons_area .btn-yellow .icon {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+}
+
+
+@media (min-width: 768px){
+    .container{
+    width: 720px;
+    margin: auto;   
+    }
+}
+@media (min-width: 992px){
+    .container{
+    width: 960px;
+    margin: auto;   
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+    width: 1170px;
+    margin: auto;   
+    }
+}
+
+
+@media (max-width: 767px){
+    .container{
+    width: 100%;   
+    }
+    .width{width: 200px;}
+}
+
+
+@media only screen and (max-width: 992px){
+    .bs-table table tr.colorbrick td {
+    line-height: 1.8rem;
+}
+
+}
+
+</style>
+</head>
+<body>
+   <section>
+
+<div class="container">
+
+<div class="bs-sec no-btm-pad">
+<div class="sec-head">
+<h2 class="sec-title">Performance of other schemes managed by Kumaresh Ramakrishnan</h2>
+</div>
+<div class="sec-cont">
+<div class="bs-table">
+<div class="table-Warp">
+
+
+<table cellspacing="1" cellpadding="1" class="tbl fst">
+    <thead>
+        <tr class="main-heading">
+            <th class="width"></th>
+            <th colspan="2">last 1 year</th>
+            <th colspan="2">last 3 year</th>
+            <th colspan="2">last 5 year</th>
+            <th rowspan="2" rowspan="2">Managing Since</th>
+           
+        </tr>
+        <tr class="main-heading">
+            <td class="width"></td>
+            <td class="reg">Reg</td>
+            <td class="reg">Dir</td>
+            <td class="reg">Reg</td>
+            <td class="reg">Dir</td>
+            <td class="reg">Reg</td>
+            <td class="reg">Dir</td>
+           
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr class="inner-title2">
+            <th colspan="10">Top 3 Schemes Performance</th>
+        </tr>
+
+        <tr class="colorbrick">
+           <td class="width"><strong> PGIm</strong>  </td>
+           <td>11.19</td>
+            <td>11,118.81 </td>
+            <td>11.75</td>
+            <td>11,174.84 </td>
+            <td>52.24</td>
+            <td>11,879.80</td>
+            <th rowspan="2" rowspan="2">2018 April</th>
+           
+        </tr>
+        <tr class="colorbrick">
+            <td class="width"> PGIm </td>
+           <td>11.19</td>
+            <td>11,118.81 </td>
+            <td>11.75</td>
+            <td>11,174.84 </td>
+            <td>52.24</td>
+            <td>11,879.80</td>
+           
+        </tr>
+
+        <tr class="colorbrick">
+           <td class="width"><strong> PGIm</strong>  </td>
+           <td>11.19</td>
+            <td>11,118.81 </td>
+            <td>11.75</td>
+            <td>11,174.84 </td>
+            <td>52.24</td>
+            <td>11,879.80</td>
+            <th rowspan="2" rowspan="2">2018 April</th>
+           
+        </tr>
+        <tr class="colorbrick">
+            <td class="width">PGIm</td>
+           <td>11.19</td>
+            <td>11,118.81 </td>
+            <td>11.75</td>
+            <td>11,174.84 </td>
+            <td>52.24</td>
+            <td>11,879.80</td>
+           
+        </tr>
+
+
+        <tr class="colorbrick">
+           <td class="width"><strong> PGIm</strong>  </td>
+           <td>11.19</td>
+            <td>11,118.81 </td>
+            <td>11.75</td>
+            <td>11,174.84 </td>
+            <td>52.24</td>
+            <td>11,879.80</td>
+            <th rowspan="2" rowspan="2">2018 April</th>
+           
+        </tr>
+        <tr class="colorbrick">
+            <td class="width"> PGIm</td>
+           <td>11.19</td>
+            <td>11,118.81 </td>
+            <td>11.75</td>
+            <td>11,174.84 </td>
+            <td>52.24</td>
+            <td>11,879.80</td>
+           
+        </tr>
+        <tr class="inner-title2">
+            <th colspan="10">PGIM India Balanced Advantage Fund(G)-Direct Plan</th>
+        </tr>
+        <tr class="colorbrick">
+           <td class="width"><strong> PGIm</strong>  </td>
+           <td>11.19</td>
+            <td>11,118.81 </td>
+            <td>11.75</td>
+            <td>11,174.84 </td>
+            <td>52.24</td>
+            <td>11,879.80</td>
+            <th rowspan="2" rowspan="2">2018 April</th>
+           
+        </tr>
+        <tr class="colorbrick">
+            <td class="width"> PGIm </td>
+           <td>11.19</td>
+            <td>11,118.81 </td>
+            <td>11.75</td>
+            <td>11,174.84 </td>
+            <td>52.24</td>
+            <td>11,879.80</td>
+           
+        </tr>
+    </tbody>
+</table>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</section> 
+</body>
+</html>
